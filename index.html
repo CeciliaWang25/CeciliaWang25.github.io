@@ -1,0 +1,165 @@
+<html>
+
+
+    <head>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            .sideBar{
+                width: 50vh;
+                height: 100vh;
+                position: fixed;
+                top:0;
+                left: 0;
+                background: black;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            .sideBar-i{
+                height: 3vh;
+                margin-bottom: 2vh;
+                padding: 10%;
+                color: white;              
+                font-size: 3vh;
+            }
+
+            .sideBar-i a:hover{
+                color: red;
+            }
+
+            .sideBar-i a{
+                color: white;
+            }
+
+            .sideBar-i#aa:hover{ 
+                text-decoration:underline;
+                cursor: pointer;
+            }
+
+            .sideBar-i#bb{
+                line-height: 4vh;
+            }
+
+            .sideBar-i + .sideBar-i{
+                margin-top: 1.5vh;
+            }
+
+
+        /* ----------- */
+            .wrapper{
+                padding: 5vh;
+                padding-top: 4rem;
+            }
+            
+            .card{
+                padding: 2vh;
+                
+            }
+
+            .card + .card{
+                margin-top: 2vh;
+            }
+
+            .card-i + .card-i{
+                margin-top:4vh;
+            }
+
+            .card-title{
+                color: black;
+                font-size: 6vh;
+            }
+
+            .card-text{
+                color:gray;
+                font-size: 3vh;
+            }
+
+            .card-label-i{
+                color: white;
+                background-color: rgb(180 , 180 , 180);
+                display: inline;
+                font-size: 3vh;
+                border-radius:5px;
+                padding: 3px 2px;
+            }
+            .card-label-i + .card-label-i{
+                margin-left: 5px;
+            }
+
+            .card-i.card-title:hover{ 
+                text-decoration:underline;
+                cursor: pointer;
+            }
+            .card-i.card-text-i#cc:hover{
+                text-decoration:underline;
+                cursor: pointer;
+            }
+
+            .card-i.card-label-i:hover{
+                background: red;
+                cursor: pointer;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <div class="sideBar" style="padding-top: 20vh; width: 25%;">
+            <div class="sideBar-i" id="aa" style="font-family: 'Abril Fatface', serif; font-size: 6vh; 
+            font-weight:bold;" >
+                Summer。桑莫。夏天
+                
+                
+            </div>
+           
+            <div class="sideBar-i" style=" color:rgba(255, 255, 255, .5) ; ">
+                前端工程師，喜歡蒐集明信片、設計簡單的小物、旅遊和看電影。
+            </div>
+           
+            <div class="sideBar-i" style=" color:rgba(255, 255, 255, .5) ;">
+                這裡紀錄了我的學習和開發筆記，歡迎交流 (*´∀`)~♥
+            </div>
+            
+            <div class="sideBar-i" id="bb">
+                <a href="/about" style="display: block;">關於我</a>
+                <a href="/archieve" style="display: block;">所有文章</a>
+                <a href="/tag" style="display: block;">標籤列表</a>
+            </div>
+            
+            <div class="sideBar-i" style="color:rgba(255, 255, 255, .5);">
+                © 2020. All rights reserved.
+            </div>
+        </div>
+
+        <div class="wrapper" style="width: calc(100% - 30%); margin-left: 30%;" >
+            <div class="card">                
+                <div class="card-i card-title" style="font-weight:bold;"  >
+                    動森：分享我的小動物們與景點
+                </div>
+                <div class="card-i card-text" style="margin-top: 1vh" >
+                    <div class="card-i card-text-i"  >
+                        06 Oct 2020
+                    </div>
+                    <div class="card-i card-text-i"id="cc">
+                        分享我的小動物們與景點。
+                    </div>
+                </div>
+                <div class="card-i card-label" >
+                    <div class="card-i card-label-i"  >
+                        動森
+                    </div>
+                    <div class="card-i card-label-i">
+                        生活
+                    </div>
+                    <div class="card-i card-label-i">
+                        Nintendo Switch 任天堂
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </body>
+
+</html>
